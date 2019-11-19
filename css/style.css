@@ -12,6 +12,7 @@ font-family: 'Raleway', sans-serif;
   width: 80%;
   margin: 0 auto;
 }
+
 header {
   width: 100%;
   background-color: grey;
@@ -24,7 +25,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
 .header-bottom {
   height: 70px;
@@ -126,6 +126,7 @@ footer {
   display: table;
   clear:both;
 }
+
 .col-left-header i {
   float: left;
 }
@@ -137,15 +138,36 @@ footer {
 }
 .col-left-header i {
   color: orange;
+  font-size: 20px;
+  margin-right: 5px;
 }
 .col-center {
   float: left;
-  width: 40%;
-  margin: 0 10%;
-  background-color: lightblue;
+  width: 50%;
+  padding: 5px;
+  margin: 0 5%;
+  border-radius: 5px;
+  background-color: white;
 }
+.col-center .title {
+  margin-bottom: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #302A25;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px #5d5147;
+}
+
+
 .col-right {
   float: left;
   width: 20%;
-  background-color: pink;
 }
+.col-right .widget {
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 5px;
+  line-height: 24px;
+  font-size: 14px;
+  }
