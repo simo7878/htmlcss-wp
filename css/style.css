@@ -6,6 +6,8 @@
 
 body {
 font-family: 'Raleway', sans-serif;
+padding: 20px;
+background-image: url(../img/natural-pattern.png);
 }
 
 .container {
@@ -111,8 +113,35 @@ main:after {
 footer {
   width: 100%;
   height: 100px;
-  background-color: lightgreen;
+  color: lightgray;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
 }
+footer .footer-top {
+ text-align: center;
+ border-bottom: 1px inset grey;
+}
+
+footer .footer-bottom::after{
+  content: '';
+  display: table;
+  clear:both;
+}
+footer .footer-bottom .footer-col {
+  float: left;
+  width: 33.3%;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+footer .footer-bottom .footer-col a {
+  color: lightgray;
+}
+footer .footer-bottom .footer-col:hover {
+  color: grey;
+}
+
 
 .col-left {
   float: left;
@@ -154,8 +183,8 @@ footer {
   line-height: 24px;
   font-weight: 400;
   color: #302A25;
-  text-transform: uppercase;
   text-shadow: 2px 2px 3px #5d5147;
+  text-transform: uppercase;
 }
 
 
@@ -170,4 +199,11 @@ footer {
   border-radius: 5px;
   line-height: 24px;
   font-size: 14px;
+  }
+
+  .col-right .widget h3 {
+    margin-bottom: 20px;
+    color: #302A25;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px #5d5147;
   }
