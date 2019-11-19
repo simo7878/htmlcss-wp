@@ -8,15 +8,82 @@ body {
 font-family: 'Raleway', sans-serif;
 }
 
-header {
-  width: 100%;
-  height: 200px;
-  background-color: grey;
-}
-
 .container {
   width: 80%;
   margin: 0 auto;
+}
+header {
+  width: 100%;
+  background-color: grey;
+}
+.header-top {
+  position: relative;
+  border: 8px solid white;
+  height: 300px;
+  background-image: url(../img/natural-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.header-bottom {
+  height: 70px;
+  background-color: lightblue;
+}
+
+.container-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header-bottom {
+  height: 50px;
+  line-height: 50px;
+  background-color: #504741;
+}
+
+.header-bottom nav ul {
+  list-style: none;
+  text-align: center;
+}
+.header-bottom nav li {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-bottom nav ul li a {
+  display: inline-block;
+  padding: 0 7px;
+  color: #bab6b5;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-left: 1px solid #60554c;
+  border-right: 1px solid #302A25;
+}
+.header-bottom nav ul li:last-child a {
+  border-right:  0;
+}
+.header-bottom nav ul li:first-child a {
+  border-left:  0;
+}
+
+.header-bottom nav ul li a:hover {
+  color: #C8C6C5;
+  background-color: #302A25;
+}
+
+.container-logo img {
+  height: 150px;
+}
+.container-logo h1 {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
 }
 
 main {
@@ -28,6 +95,18 @@ main:after {
   display: table;
   clear: both;
 }
+.menu li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  list-style: none;
+}
+.menu li a {
+  text-decoration: none;
+  color: green;
+}
+.menu li a:hover {
+  text-decoration: underline;
+}
 
 footer {
   width: 100%;
@@ -38,7 +117,26 @@ footer {
 .col-left {
   float: left;
   width: 20%;
-  background-color: pink;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+.col-left-header:after {
+  content: '';
+  display: table;
+  clear:both;
+}
+.col-left-header i {
+  float: left;
+}
+.col-left-header h3 {
+  float: left;
+}
+.col-left-header h3 {
+  width: 60%;
+}
+.col-left-header i {
+  color: orange;
 }
 .col-center {
   float: left;
